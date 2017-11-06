@@ -1,13 +1,18 @@
 body {
-background-color: #567468;    
+background-color: #dddddd;    
+h1 {
+    color: eeeeee;
+}
+
+
 }
 .nav_style {
-    background-color: blue;
     margin-bottom: 20px;
     padding: 10px;
 }
 nav a{
-    background-color: yellow;
+    background-color: brown;
+    color: silver;
     padding: 10px;
     
 }
@@ -16,11 +21,9 @@ nav a{
     color: #000000;
 }
 
-.model
+img
 {
-    border: 2px, solid, silver;
+    size: 50%;
     height: 300;
     width: 400;
 }
-
-    
