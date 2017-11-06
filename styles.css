@@ -1,0 +1,26 @@
+body {
+background-color: #567468;    
+}
+.nav_style {
+    background-color: blue;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+nav a{
+    background-color: yellow;
+    padding: 10px;
+    
+}
+.a_style:hover {
+    font-size: 40px;
+    color: #000000;
+}
+
+.model
+{
+    border: 2px, solid, silver;
+    height: 300;
+    width: 400;
+}
+
+    
