@@ -1,29 +1,47 @@
 body {
-background-color: #dddddd;    
+ background-color: #dddddd;}
+
 h1 {
-    color: eeeeee;
+    color: #6666666;
+}
+
+.model
+{
+    background-color: green;
+    border: double;
+    height: 200px;
+    width:  300px;
+   
+}
+
+.main_img
+{
+    height: 400px;
+    width: 600px;
+    float: left;
+    margin-right: 20px;
+    
+    
 }
 
 
-}
 .nav_style {
     margin-bottom: 20px;
     padding: 10px;
 }
+
 nav a{
     background-color: brown;
     color: silver;
     padding: 10px;
     
 }
+
 .a_style:hover {
-    font-size: 40px;
+    font-size: 30px;
     color: #000000;
 }
 
-img
-{
-    size: 50%;
-    height: 300;
-    width: 400;
+article {
+    float: left;
 }
