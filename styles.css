@@ -1,8 +1,14 @@
 body {
- background-color: #dddddd;}
+ background-color: #dddddd;
+    font-family: fantasy;
+}
 
-h1 {
+header {
     color: #6666666;
+    height: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
 }
 
 .model
@@ -15,29 +21,50 @@ h1 {
 
 .main_img
 {
-    height: 500px;
-    width: 800px;
+    height: 585px;
+    width: 820px;
     float: left;
     margin-right: 20px;
 }
 .nav_style {
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-bottom: 30px;
+    
+
 }
 nav a{
     background-color: brown;
     color: silver;
+    font-weight: bold;
     padding: 10px;
+    font-family: fantasy;
 }
 .a_style:hover {
     font-size: 30px;
-    color: #000000;
+    color: silver;
 }
 .art {
-    width: 400px;
-    background-color: red;
-    border: 3px solid red;
+    width: 550px;
+    background-color: silver;
+    
     float: left;
     text-align: justify;
     padding: 10px;
+    font-family: fantasy;
+    font-size: 20px;
+    text-shadow: 15px;
 }
+
+#form {
+  background-color: brown;
+  width: 550px;
+  margin: 0px;
+  margin-bottom: 10px;
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  color: silver;
+
+}    
+
+
+

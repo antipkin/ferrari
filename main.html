@@ -2,28 +2,72 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title> My favorite car! Ferrari!</title>
+<title> Прокатиться на гоночном автомобиле</title>
 <link rel ="stylesheet" href = "styles.css"/>
+<script type="text/javascript">
+	function validform (form) 
+	{
+		var fail = false;
+		var name = form.name.value;
+		var tel = form.tel.value;
+		var email = form.email.value;
+		var email_pattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
+		var tel_pattern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+		
+		if (name =="" || name == " ") 
+			fail = "Введите имя";
+		else if (tel_pattern.test(tel) ==false)
+			fail = "Введите телефон";
+		else if (email_pattern.test(email)==false)
+			fail = "Введите email";
+		if (fail)
+			alert (fail);
+		else
+			window.location  = "http://ya.ru";
+	}
+</script>
 </head>
 <body>
-	<h1>
-		Феррари - лучший спортивный автомобиль
-	</h1>
+	<header>
+		Прокат спортивного автомобиля
+	</header>
 	<nav class ="nav_style">
-		<a href ="main.html" class ="a_style"> Главная</a>
-		<a href ="history.html" class="a_style"> История</a>
-		<a href ="models.html" class="a_style"> Модельный ряд</a>
-		<a href ="video.html" class="a_style"> Видео об автомобиле</a>
-		<a href ="contact.html" class="a_style"> Контакты </a>
+		<a href ="main.html" class ="a_style">Главная</a>
+		<a href ="history.html" class="a_style">Прайс</a>
+		<a href ="models.html" class="a_style">Модели автомобилей</a>
+		<a href ="video.html" class="a_style">Видео</a>
+		<a href ="contact.html" class="a_style">Контакты</a>
 	</nav>
 	
 	<div >
 	<img class ="main_img" src ="https://www.4wheelsnews.com/images/photo_galleries/original/27381/ferrari-laferrari.jpg"/>
 	</div>
 	
+		
+	<form action ="" method ="post" name="order" id="form"> Отправить заявку <br>
+		<label for="name">Имя </label><input type="text" name="name" placeholder ="Введите имя" id ="name"/> <br>
+		<label for="tel">Телефон </label><input type="tel" name="tel" placeholder ="Введите телефон" id = "tel"/> <br>
+		<label for="email">E-mail </label><input type="email" name="email" placeholder ="Введите e-mail" id= "email"/><br>
+		<input type="button" name="button" onclick = "validform (document.getElementById('form'))" value = "Отправить"/> 
+	</form>
+	
+	
 	<div class="art">
-		Ferrari S.p.A. (кратко: Ferrari — рус. «Ферра́ри») — итальянская компания, выпускающая спортивные автомобили, базирующаяся в Маранелло. Основана в 1928 году Энцо Феррари как Scuderia Ferrari, компания спонсировала гонщиков и производила гоночные машины до 1947 года. С 1947 года начала выпуск «уличных» (англ. street-legal) спортивных автомобилей под маркой «Ferrari S.p.A.». На протяжении всей своей истории, компания участвует в различных гонках, особенно в Формуле-1, где она имеет наибольший успех. Эмблема «Феррари» — гарцующая лошадь на жёлтом фоне. Традиционный цвет автомобилей — красный, но компания выпускает автомобили и других цветов.
+		Появилась отличная возможность для желающих принять участие в соревнованиях на "Тюменском кольце" -  аренда спортивного автомобиля!
+		В стоимость аренды включены: <br>
+		<ul>
+			 <li>бензин</li>
+			 <li>резина</li>
+			 <li>аренда комфортного, современного, просторного бокса</li>
+			 <li>команда механиков</li>
+		</ul>
+	    Трек тайм оплачивается отдельно согласно действующему <a href ="price.html"> прайсу!</a>
 	</div>
+	
+
+
+
+
 
 </body>
 </html>
